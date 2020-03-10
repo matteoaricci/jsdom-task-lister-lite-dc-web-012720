@@ -32,7 +32,7 @@ function makeNewLi(task, otherTask) {
   if (newLi.className == "high") {
     target.insertBefore(newLi, target.childNodes[0])
   } else if (newLi.className == "medium") {
-    target.insertBefore(newLi, target.child )
+    target.insertBefore(newLi, target.querySelector('.low'))
   } else {
     target.appendChild(newLi)
   }
